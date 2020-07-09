@@ -100,8 +100,8 @@ function register_gojek() {
         }
         echo "\n";
         sleep(5);
-        $claim1 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', '{"promo_code":"COBAGOFOOD0906"}', headers($access_token));
-        echo "[+] Mencoba Redem Voucher COBAGOFOOD0906\n";
+        $claim1 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', '{"promo_code":"COBAGOFOOD0907"}', headers($access_token));
+        echo "[+] Mencoba Redem Voucher COBAGOFOOD0907\n";
         if (stripos($claim1, '"success":true')) {
             echo "Berhasil Claim Kak? makan\n";
         } else {
@@ -117,8 +117,8 @@ function register_gojek() {
             echo "Cie Gagal Redem Ga Jadi Makan\n";
         }
         sleep(9);
-        $claim2 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', '{"promo_code":"COBAGOFOOD0906"}', headers($access_token));
-        echo "[+] Mencoba Redem Voucher COBAGOFOOD0906\n";
+        $claim2 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', '{"promo_code":"COBAGOFOOD0907"}', headers($access_token));
+        echo "[+] Mencoba Redem Voucher COBAGOFOOD0907\n";
         if (stripos($claim2, '"success":true')) {
             echo "Berhasil Claim Kak? Selamat makan\n";
         } else {
